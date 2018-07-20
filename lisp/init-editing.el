@@ -3,6 +3,9 @@
 (require-package 'rainbow-delimiters)
 (require-package 'flycheck)
 
+(require-package 'evil)
+(require 'evil)
+
 ;; Highliting matching parentheses
 (show-paren-mode 1)
 
@@ -39,4 +42,8 @@
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
+(evil-mode t)
+(global-linum-mode t)
+
 (provide 'init-editing)
+

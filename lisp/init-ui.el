@@ -1,5 +1,5 @@
 (require 'init-elpa)
-(require-package 'atom-one-dark-theme)
+(require-package 'cyberpunk-theme)
 (require-package 'golden-ratio)
 
 (require 'golden-ratio)
@@ -21,7 +21,12 @@
   apropos-do-all t
   mouse-yank-at-point t)
 
-(load-theme 'atom-one-dark t)
+(load-theme 'cyberpunk t)
+(set-face-attribute 'default nil
+                    :family "Overpass Mono Nerd Font"
+                    :height 70
+                    :weight 'normal
+                    :width 'normal)
 
 (blink-cursor-mode 0)
 (setq-default cursor-type 'bar)
