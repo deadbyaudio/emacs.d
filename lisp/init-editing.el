@@ -1,5 +1,7 @@
 (require 'init-elpa)
 (require 'saveplace)
+;;(require 'smartparens-config)
+
 (require-package 'rainbow-delimiters)
 (require-package 'flycheck)
 
@@ -8,6 +10,18 @@
 
 ;; Highliting matching parentheses
 (show-paren-mode 1)
+;; Matching opening parentheses/braces/quotes...
+;; (smartparens-global-mode 1)
+
+;;(sp-local-pair 'prog-mode "{" nil :post-handlers '((my-create-newline-and-enter-sexp "RET")))
+;;(sp-local-pair 'prog-mode "(" nil :post-handlers '((my-create-newline-and-enter-sexp "RET")))
+;;(sp-local-pair 'prog-mode "[" nil :post-handlers '((my-create-newline-and-enter-sexp "RET")))
+
+;;(defun my-create-newline-and-enter-sexp (&rest _ignored)
+;;  (newline)
+;;  (indent-according-to-mode)
+;;  (forward-line -1)
+;;  (indent-according-to-mode))
 
 ;; Highliting current line
 (global-hl-line-mode 1)
@@ -46,4 +60,3 @@
 (global-linum-mode t)
 
 (provide 'init-editing)
-

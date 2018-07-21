@@ -1,5 +1,5 @@
 (require 'init-elpa)
-(require-package 'cyberpunk-theme)
+(require-package 'calmer-forest-theme)
 (require-package 'golden-ratio)
 
 (require 'golden-ratio)
@@ -11,8 +11,8 @@
 (when (fboundp 'scroll-bar-mode)
   (scroll-bar-mode -1))
 
-(set-face-attribute 'default nil :height 70)
-(setq-default line-spacing 0.4)
+(set-face-attribute 'default nil :height 150)
+(setq-default line-spacing 0.3)
 
 (setq
   x-select-enable-clipboard t
@@ -21,10 +21,10 @@
   apropos-do-all t
   mouse-yank-at-point t)
 
-(load-theme 'cyberpunk t)
+(load-theme 'calmer-forest t)
 (set-face-attribute 'default nil
                     :family "Overpass Mono Nerd Font"
-                    :height 70
+                    :height 150
                     :weight 'normal
                     :width 'normal)
 
